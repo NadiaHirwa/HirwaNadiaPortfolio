@@ -3,32 +3,26 @@ import { Calendar, MapPin, Building2, ExternalLink } from "lucide-react";
 export const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Web Developer & Marketing Assistant",
-      company: "Imvunwa business group, Kimironko, Kigali",
-      duration: "June 2023 - May 2025",
-      description: "Developed and managed Imvunwa's website and digital presence, handled social media, and improved online engagement through content strategies and analytics."
-    },
-    {
-      title: "Software Development Intern",
+      title: "Data Analysis intern",
       company: "kLab, Kigali",
-      duration: "December 2024 - July 2025",
-      description: "Participated in the Fullstack Web Development program, building web apps with React, React Native, TypeScript, Node.js, and MongoDB, and gained experience in agile teamwork and deployment."
+      duration: "Dec 2024 - August 2025",
+      description: "I completed intensive data analysis and Python training, working with Excel, Power BI, SQL, Looker Studio, and Plotly Dash. I built interactive dashboards, performed ETL and data cleaning, and created visualizations, while collaborating in an agile environment and using Git for version control."
     },
     {
-      title: "Embedded System Trainer",
-      company: "EdTech, Kicukiro, Kigali",
-      duration: "February 2025 - April 2025",
-      description: "Trained Advanced Level students in embedded systems, delivering hands-on lessons and guiding IoT and automation projects."
+      title: "Machine Learning trainee",
+      company: "AI6, Kigali",
+      duration: "July 2025 - Present",
+      description: "I gained hands-on experience in data preprocessing, modeling, and evaluation, working on sentiment analysis, neural networks, and multilayer perceptron models in PyTorch."
     },
     {
-      title: "Embedded Systems Trainee",
-      company: "ICT Chamber, Kigali",
-      duration: "September 2023 - December 2023",
-      description: "Completed intensive training in embedded systems, prototyping IoT solutions and developing embedded applications with Arduino, ESP32, and C/C++."
+      title: "Embedded System Trainee",
+      company: "STES Group, Kicukiro, Kigali",
+      duration: "January 2023 - June 2023",
+      description: "Developed IoT-based livestock monitoring solutions for cows and managed social media strategies, using analytics to optimize engagement and align digital efforts with business goals."
     },
     {
       title: "Teacher Assistant",
-      company: "IEEE, Muhoza, Musanze",
+      company: "IEE, Mukamira, Nyabihu",
       duration: "November 2020 - June 2021",
       description: "Taught Physics and Mathematics to high school students, helping them improve performance and understand scientific concepts."
     }
@@ -78,18 +72,7 @@ export const ExperienceSection = () => {
             ))}
           </div>
         </div>
-
-        <div className="text-center mt-12">
-          <a
-            href="https://docs.google.com/document/d/1zucWOcCiVARCgp8AAh418OfRCvThRM2ZXfM7qSbfFPI/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cosmic-button inline-flex items-center gap-2"
-          >
-            View Full Resume
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </div>
+        
       </div>
     </section>
   );
