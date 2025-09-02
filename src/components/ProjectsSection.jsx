@@ -28,6 +28,33 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+  {
+    id: 4,
+    title: "Web Development Portfolio",
+    description: "Designed and developed a responsive portfolio website using React, Tailwind CSS, and modern web development practices.",
+    image: "/projects/project4.png",
+    tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Mobile App Development",
+    description: "Built a cross-platform mobile application using Flutter for data collection and real-time analytics with Firebase integration.",
+    image: "/projects/project5.png",
+    tags: ["Flutter", "Dart", "Firebase", "Mobile Development"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Data Analysis & ETL Pipeline",
+    description: "Created an automated ETL pipeline for data processing, cleaning, and analysis using Python, SQL, and cloud technologies.",
+    image: "/projects/project6.png",
+    tags: ["Python", "ETL", "SQL", "Data Processing"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 export const ProjectsSection = () => {
