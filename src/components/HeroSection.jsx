@@ -1,6 +1,50 @@
 import { ArrowDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export const HeroSection = () => {
+  const [currentText, setCurrentText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
+
+  const texts = [
+    "Data Analyst",
+    "Machine Learning Engineer", 
+    "Web Developer",
+    "IoT Specialist",
+    "Python Developer"
+  ];
+
+  useEffect(() => {
+    const typeSpeed = isDeleting ? 50 : 100;
+    const pauseTime = 2000;
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && currentText === texts[currentIndex]) {
+        setTimeout(() => setIsDeleting(true), pauseTime);
+      } else if (isDeleting && currentText === "") {
+        setIsDeleting(false);
+        setCurrentIndex((prev) => (prev + 1) % texts.length);
+      } else {
+        setCurrentText((prev) => 
+          isDeleting 
+            ? prev.slice(0, -1)
+            : prev + texts[currentIndex][prev.length]
+        );
+      }
+    }, typeSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [currentText, currentIndex, isDeleting, texts]);
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
+
   return (
     <section
       id="hero"
@@ -13,6 +57,13 @@ export const HeroSection = () => {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in"> Hi, I'm Nadia Iradukunda H.</span>
             </h1>
+
+            <div className="text-2xl md:text-3xl font-semibold text-primary min-h-[3rem] opacity-0 animate-fade-in-delay-2">
+              <span className="typing-text">
+                {currentText}
+                <span className={`cursor ${showCursor ? 'cursor-blink' : ''}`}>|</span>
+              </span>
+            </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 opacity-0 animate-fade-in-delay-3">
               I turn data into insights through analysis and visualization, 
