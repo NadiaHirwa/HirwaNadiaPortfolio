@@ -1,133 +1,196 @@
-# Build a Modern Portfolio Website with React & TailwindCSS
+# Nadia Hirwa - Portfolio Website
 
-<div align="center">
-  <br />
-  <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">
-    <img src="./banner.png" alt="Portfolio Website Banner">
-  </a>
-  <br />
-  <div>
-    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-    <img src="https://img.shields.io/badge/-Lucide Icons-FD4D4D?style=for-the-badge&logo=lucide" alt="Lucide Icons" />
-    <img src="https://img.shields.io/badge/-Radix UI-9D4EDD?style=for-the-badge&logo=data:image/svg+xml;base64..." alt="Radix UI" />
-  </div>
-  <h3 align="center">Create a Stunning Developer Portfolio with Animations, Dark Mode, and Projects Showcase</h3>
-  <div align="center">
-    Follow the full video tutorial on 
-    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank"><b>YouTube</b></a>
-  </div>
-  <br />
-</div>
+A modern, responsive portfolio website showcasing my skills in Data Analysis, Machine Learning, Web Development, and IoT solutions.
 
-## 📋 Table of Contents
+## 🚀 Live Demo
 
-1. [Introduction](#-introduction)
-2. [Tech Stack](#-tech-stack)
-3. [Features](#-features)
-4. [Quick Start](#-quick-start)
-5. [Screenshots](#-screenshots)
-6. [Deployment](#-deployment)
+[View Live Portfolio](https://hirwa-repository.vercel.app)
 
----
+## ✨ Features
 
-## 🚀 Introduction
+- **Responsive Design** - Optimized for all devices
+- **Modern UI/UX** - Clean and professional interface
+- **Dark/Light Theme** - Toggle between themes
+- **Interactive Animations** - Smooth hover effects and transitions
+- **Timeline Layout** - Professional experience and education display
+- **Project Showcase** - 6 featured projects with detailed descriptions
+- **Contact Form** - Easy way for visitors to get in touch
 
-In this tutorial, you'll learn how to build a modern portfolio website using **React**, **TailwindCSS**, **Vite**, and **Lucide Icons**. From dark mode support to responsive animations and deployable project showcases, this video walks you through every step—perfect for developers looking to level up their frontend skills or apply for jobs.
+## 🛠️ Tech Stack
 
-🎥 Watch the full tutorial: [YouTube](https://youtu.be/YOUR_VIDEO_ID)
+- **Frontend**: React 18, Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Deployment**: Vercel
 
----
+## 📁 Project Structure
 
-## ⚙️ Tech Stack
+```
+src/
+├── components/
+│   ├── AboutSection.jsx      # About me section
+│   ├── AwardsSection.jsx     # Awards & certifications
+│   ├── ContactSection.jsx    # Contact form
+│   ├── EducationSection.jsx  # Education timeline
+│   ├── ExperienceSection.jsx # Work experience
+│   ├── HeroSection.jsx       # Landing section
+│   ├── Navbar.jsx           # Navigation bar
+│   ├── ProjectsSection.jsx   # Featured projects
+│   ├── SkillsSection.jsx     # Technical skills
+│   └── ui/                   # Reusable UI components
+├── pages/
+│   ├── Home.jsx             # Main page
+│   └── NotFound.jsx         # 404 page
+└── main.jsx                 # App entry point
+```
 
-* **React** – Component-based UI development
-* **Vite** – Lightning-fast build tool
-* **TailwindCSS** – Utility-first CSS for styling
-* **Lucide Icons** – Clean and beautiful icon pack
-* **Radix UI** – Accessible component primitives
-* **TypeScript (optional)** – Type safety and tooling
-* **GitHub & Vercel** – Deployment
-
----
-
-## ⚡️ Features
-
-* 🌑 **Light/Dark Mode Toggle**
-  Save theme preference in local storage with beautiful transitions
-
-* 💫 **Animated Backgrounds**
-  Stars, meteors, scroll effects, and glowing UI elements
-
-* 📱 **Responsive Navigation**
-  Desktop and mobile menus with glassmorphism
-
-* 👨‍💻 **Hero & About Sections**
-  Showcase who you are with smooth intro animations and buttons
-
-* 📊 **Skills Grid**
-  Filterable progress bars and categories with animated width
-
-* 🖼️ **Projects Showcase**
-  Display screenshots, tech stacks, and GitHub/demo links
-
-* 📩 **Contact Section**
-  Social icons + responsive contact form with toast notifications
-
-* 🚀 **One-Click Deployment**
-  Easily host your site with Vercel and GitHub
-
----
-
-## 👌 Quick Start
+## 🚀 Getting Started
 
 ### Prerequisites
 
-* [Node.js](https://nodejs.org/)
-* [Git](https://git-scm.com/)
+- Node.js (v16 or higher)
+- npm or yarn
 
-### Clone and Run
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NadiaHirwa/HirwaRepository.git
+   cd HirwaRepository
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+### Build for Production
 
 ```bash
-git clone https://github.com/yourusername/react-tailwind-portfolio.git
-cd react-tailwind-portfolio
-npm install
-npm run dev
+npm run build
 ```
 
-Your app will be available at: [http://localhost:5173](http://localhost:5173)
+## 📱 Sections
+
+### 🏠 Hero Section
+- Professional introduction
+- Call-to-action buttons
+- Animated background effects
+
+### 👋 About Section
+- Personal introduction
+- Core competencies
+- Skills overview with icons
+
+### 💼 Experience Section
+- Professional work history
+- Timeline layout with alternating cards
+- Detailed role descriptions
+
+### 🎓 Education Section
+- Academic background
+- University and secondary education
+- Degree information
+
+### 🏆 Awards & Certifications
+- Professional certifications
+- Awards and achievements
+- View certificate links
+
+### 🛠️ Skills Section
+- Technical skills showcase
+- Programming languages
+- Tools and technologies
+
+### 🚀 Projects Section
+- 6 featured projects
+- Interactive project cards
+- Technology tags
+- Live demo and GitHub links
+
+### 📞 Contact Section
+- Contact form
+- Social media links
+- Resume download
+
+## 🎨 Customization
+
+### Adding New Projects
+
+1. Open `src/components/ProjectsSection.jsx`
+2. Add new project object to the `projects` array:
+   ```javascript
+   {
+     id: 7,
+     title: "Your Project Title",
+     description: "Project description",
+     image: "/projects/project7.png",
+     tags: ["React", "Node.js", "MongoDB"],
+     demoUrl: "https://your-demo-url.com",
+     githubUrl: "https://github.com/your-username/project",
+   }
+   ```
+3. Add corresponding image to `public/projects/`
+
+### Updating Experience
+
+1. Open `src/components/ExperienceSection.jsx`
+2. Modify the `experiences` array with your work history
+
+### Changing Colors/Themes
+
+1. Open `tailwind.config.js`
+2. Modify the color palette in the `theme` section
+
+## 📸 Screenshots
+
+### Desktop View
+- Clean, professional layout
+- Side-by-side timeline for experience
+- Grid layout for projects
+
+### Mobile View
+- Responsive design
+- Touch-friendly navigation
+- Optimized for small screens
+
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
+
+## 📧 Contact
+
+**Nadia Hirwa**
+- Email: irahirnad22@gmail.com
+- LinkedIn: [Your LinkedIn Profile]
+- GitHub: [@NadiaHirwa](https://github.com/NadiaHirwa)
+
+## 🙏 Acknowledgments
+
+- Design inspiration from modern portfolio templates
+- Icons by [Lucide](https://lucide.dev/)
+- Built with [Vite](https://vitejs.dev/) and [React](https://reactjs.org/)
 
 ---
 
-## 🖼️ Screenshots
-
-> 📸 Add screenshots of your Hero section, Projects grid, and Contact form here to show off your site.
-
----
-
-## ☁️ Deployment
-
-### Deploy on Vercel
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Click **Deploy**
-
-Your live website will be hosted on a custom subdomain (e.g. `https://your-name.vercel.app`)
-
----
-
-## 🔗 Useful Links
-
-* [React Documentation](https://reactjs.org/)
-* [Tailwind CSS Docs](https://tailwindcss.com/)
-* [Lucide Icons](https://lucide.dev/)
-* [Radix UI](https://www.radix-ui.com/)
-* [Vite](https://vitejs.dev/)
-* [Vercel](https://vercel.com/)
-
----
-
-Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or a banner image suggestion!
+⭐ **Star this repository if you found it helpful!**
