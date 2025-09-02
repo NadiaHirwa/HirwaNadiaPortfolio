@@ -7,12 +7,6 @@ export const EducationSection = () => {
       degree: "Bachelor's in Computer and Software Engineering",
       duration: "2022 - 2026",
       description: "Final year student with a focus on software development, data structures, embedded systems and IoT."
-    },
-    {
-      title: "Ecole secondaire saint vincent Muhoza",
-      degree: "Advanced Level - Physics, Mathematics, and Computer Science",
-      duration: "2018 - 2021",
-      description: "Studied physics, mathematics and computer science where I gained a solid foundation in problem-solving, analytical thinking, and programming concepts."
     }
   ];
 
@@ -56,17 +50,6 @@ export const EducationSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            href="https://docs.google.com/document/d/1zucWOcCiVARCgp8AAh418OfRCvThRM2ZXfM7qSbfFPI/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cosmic-button inline-flex items-center gap-2"
-          >
-            View Full Resume
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </div>
       </div>
     </section>
   );
