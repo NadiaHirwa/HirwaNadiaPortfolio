@@ -3,32 +3,26 @@ import { Award, Eye, ExternalLink } from "lucide-react";
 export const AwardsSection = () => {
   const awards = [
     {
-      title: "Fullstack Course Certificate",
+      title: "Basic Data Analytics Course Certificate",
       issuer: "kLab",
       duration: "2024-2025",
       viewLink: "#"
     },
     {
-      title: "Fullstack and mobile development certificate (Digital skills for employability)",
+      title: "Data Analytics Certificate (IBM)",
       issuer: "kLab",
       duration: "2025",
       viewLink: "#"
     },
     {
       title: "Embedded Systems Course Certificate",
-      issuer: "ICT Chamber",
-      duration: "2024-2025",
+      issuer: "STES Group",
+      duration: "2023",
       viewLink: "#"
     },
     {
-      title: "Women Professional Development Program",
-      issuer: "U.S. Embassy",
-      duration: "2025",
-      viewLink: "#"
-    },
-    {
-      title: "Hackathon Finalist (Digital ID Hackthon) - Digital Student eCard",
-      issuer: "Digital Student eCard",
+      title: "Software Development Certificate",
+      issuer: "PLP",
       duration: "2024",
       viewLink: "#"
     },
@@ -71,18 +65,6 @@ export const AwardsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            href="https://docs.google.com/document/d/1zucWOcCiVARCgp8AAh418OfRCvThRM2ZXfM7qSbfFPI/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cosmic-button inline-flex items-center gap-2"
-          >
-            View Full Resume
-            <ExternalLink className="h-4 w-4" />
-          </a>
         </div>
       </div>
     </section>
