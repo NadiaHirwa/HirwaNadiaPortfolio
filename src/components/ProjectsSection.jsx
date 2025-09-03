@@ -3,7 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Interactive Data Dashboard",
+    title: "Agrivoltaic System Data Pilot",
     description: "Built an interactive dashboard using Python and Plotly Dash for data visualization and business intelligence reporting.",
     image: "/projects/project1.png",
     tags: ["Python", "Plotly Dash", "SQL"],
@@ -12,12 +12,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Machine Learning Sentiment Analysis",
-    description: "Developed a sentiment analysis model using PyTorch and neural networks to analyze customer feedback and social media data.",
+    title: "Crime Analysis Dashboard",
+    description: "Analyzed crime patterns and case outcomes using Power BI, Python, and SQL, creating interactive dashboards to uncover trends, age-based insights, and reporting efficiencies.",
     image: "/projects/project2.png",
-    tags: ["PyTorch", "Python", "Machine Learning", "NLP"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["PyTorch", "Python"],
+    demoUrl: "https://app.powerbi.com/view?r=eyJrIjoiM2JlNmU3MGQtNTk2My00OWY2LTk2OWQtM2RiNzQ2NThjZjJjIiwidCI6ImMxYTMwMDM3LWM0NTYtNDJhMy1hNjQzLWZhYTI4MzFiYjI5NCJ9",
+    githubUrl: "https://github.com/NadiaHirwa/Crime-Analysis.git",
   },
   {
     id: 3,
