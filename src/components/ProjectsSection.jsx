@@ -52,7 +52,7 @@ const projects = [
     description: "Created an automated ETL pipeline for data processing, cleaning, and analysis using Python, SQL, and cloud technologies.",
     image: "/projects/project6.png",
     tags: ["Python", "ETL", "SQL", "Data Processing"],
-    demoUrl: "#", 
+    demoUrl: "#",
     githubUrl: "#",
   },
 ];
