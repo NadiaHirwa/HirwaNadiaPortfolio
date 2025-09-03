@@ -7,6 +7,7 @@ import {
   Send,
   Twitch,
   Twitter,
+  Github,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -93,18 +94,24 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="www.linkedin.com/in/nadiahirwa" target="_blank">
-                  <Linkedin />
+                <a 
+                  href="https://www.linkedin.com/in/nadiahirwa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300 group"
+                  title="LinkedIn Profile"
+                >
+                  <Linkedin className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </a>
-                {/* <a href="#" target="_blank">
-                  <Github />
+                <a 
+                  href="https://github.com/NadiaHirwa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300 group"
+                  title="GitHub Profile"
+                >
+                  <Github className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
-                </a> */}
               </div>
             </div>
           </div>
