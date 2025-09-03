@@ -21,12 +21,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "IoT Livestock Monitoring System",
-    description: "Created an IoT-based solution for monitoring livestock health and location using embedded systems and data analytics.",
+    title: "Population Data Insights",
+    description: "Cleaned and analyzed population data with Python and Power BI; created interactive dashboard showing country trends for SDG insights.",
     image: "/projects/project3.png",
-    tags: ["IoT", "Embedded Systems", "Arduino", "Data Analytics"],
+    tags: ["Pythn", "SQL", "Power BI"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/NadiaHirwa/Population-Data-World-Bank-API-.git",
   },
   {
     id: 4,
