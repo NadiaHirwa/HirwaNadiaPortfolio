@@ -18,16 +18,16 @@ export const AwardsSection = () => {
       title: "Embedded Systems Course Certificate",
       issuer: "STES Group",
       duration: "2023",
-      viewLink: "#"
+      viewLink: "https://drive.google.com/file/d/1go0owzxwlokbB8k5aexfwHJoC3Ghwcqq/view?usp=sharing"
     },
     {
       title: "Software Development Certificate",
       issuer: "PLP",
       duration: "2024",
-      viewLink: "#"
+      viewLink: "https://drive.google.com/file/d/1UkoMd0sBSEYj-uRUoQhVG8fnoT_37nNC/view?usp=sharing"
     },
     {
-      title: "Bridge Program",
+      title: "Embedded System Bridge Program",
       issuer: "Carnegie Mellon University",
       duration: "2024",
       viewLink: "#"
