@@ -4,11 +4,11 @@ const projects = [
   {
     id: 1,
     title: "Interactive Data Dashboard",
-    description: "Built an interactive dashboard using Python, Plotly Dash, and Power BI for data visualization and business intelligence reporting.",
+    description: "Built an interactive dashboard using Python and Plotly Dash for data visualization and business intelligence reporting.",
     image: "/projects/project1.png",
-    tags: ["Python", "Plotly Dash", "Power BI", "SQL"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Python", "Plotly Dash", "SQL"],
+    demoUrl: "https://data-pilot-agrivoltaic-system-1.onrender.com/",
+    githubUrl: "https://github.com/NadiaHirwa/Agrivoltaic.git",
   },
   {
     id: 2,
