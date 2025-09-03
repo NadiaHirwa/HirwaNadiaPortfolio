@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills in Data Analysis, Ma
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://hirwa-repository.vercel.app)
+[View Live Portfolio](https://hirwa-nadia-portfolio.vercel.app/)
 
 ## ✨ Features
 
@@ -182,7 +182,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 **Nadia Hirwa**
 - Email: irahirnad22@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
+- LinkedIn: [LinkedIn Profile](www.linkedin.com/in/nadiahirwa)
 - GitHub: [@NadiaHirwa](https://github.com/NadiaHirwa)
 
 ## 🙏 Acknowledgments
