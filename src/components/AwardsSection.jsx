@@ -6,13 +6,13 @@ export const AwardsSection = () => {
       title: "Basic Data Analytics Course Certificate",
       issuer: "kLab",
       duration: "2024-2025",
-      viewLink: "#"
+      viewLink: "https://drive.google.com/file/d/1PHvkyNeNV1d9yN92NKCUumPVtnT9adL6/view?usp=sharing"
     },
     {
       title: "Data Analytics Certificate (IBM)",
       issuer: "kLab",
       duration: "2025",
-      viewLink: "#"
+      viewLink: "https://drive.google.com/file/d/1W2_JujMFc5wAsw1D89mWt41pkfjQLX_Q/view?usp=sharing"
     },
     {
       title: "Embedded Systems Course Certificate",
@@ -31,6 +31,12 @@ export const AwardsSection = () => {
       issuer: "Carnegie Mellon University",
       duration: "2024",
       viewLink: "#"
+    },
+    {
+      title: "Leardership Certificate",
+      issuer: "Afflisa",
+      duration: "2025",
+      viewLink: "https://drive.google.com/file/d/16YU1ftTFRfchO84qixh9UnrN0H0ggg-2/view?usp=sharing"
     }
   ];
 
