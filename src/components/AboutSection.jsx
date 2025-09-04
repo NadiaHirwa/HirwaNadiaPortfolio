@@ -1,4 +1,4 @@
-import { Briefcase, Code, User, Server, Brain, Smartphone } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -28,6 +28,31 @@ export const AboutSection = () => {
               I combine creativity with technical skills to stay ahead in the evolving 
               tech space.
             </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm md:text-base text-left">
+              <div className="flex items-center gap-2">
+                <span className="font-semibold">Phone:</span>
+                <a href="tel:(+250)781-186-230" className="hover:text-primary transition-colors">+250790755673</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold">Email:</span>
+                <a href="mailto:irahirnad22@gmail.com" className="hover:text-primary transition-colors">ishimwediane400@gmail.com</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold">City:</span>
+                <span>Kigali, Rwanda</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <a href="https://github.com/NadiaHirwa" target="_blank" className="flex items-center gap-2 text-emerald-500 hover:text-emerald-400 transition-colors">
+                  <Github size={16} />
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/nadiahirwa" target="_blank" className="flex items-center gap-2 text-emerald-500 hover:text-emerald-400 transition-colors">
+                  <Linkedin size={16} />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2 md:pt-4 justify-center md:justify-start">
               <a href="#contact" className="cosmic-button">
