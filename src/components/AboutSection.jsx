@@ -16,15 +16,17 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              With experience in web, mobile, and data-driven applications, 
-              I specialize in building responsive and user-friendly solutions 
-              using modern technologies like React, Flutter, Python, and SQL.
+              I’m a Passionate Data Analyst & Web Developer with experience in web, 
+              mobile, and data-driven applications. I specialize in building responsive, 
+              user-friendly solutions using technologies like React, Flutter, Python, SQL, 
+              and Power BI.
             </p>
 
             <p className="text-muted-foreground">
-              I’m passionate about turning data and ideas into practical, 
-              impactful software, and I’m constantly learning and refining 
-              my skills to stay ahead in the evolving world of technology.
+              I love transforming raw data into actionable insights and creating digital 
+              products that solve real-world problems. Constantly learning and exploring, 
+              I combine creativity with technical skills to stay ahead in the evolving 
+              tech space.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2 md:pt-4 justify-center md:justify-start">
