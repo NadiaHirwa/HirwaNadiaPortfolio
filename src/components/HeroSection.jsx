@@ -48,24 +48,24 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+      className="relative min-h-[80vh] md:min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-6xl mx-auto z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in"> Hi, I'm Nadia Iradukunda H.</span>
             </h1>
 
-            <div className="text-2xl md:text-3xl font-semibold text-primary min-h-[3rem] opacity-0 animate-fade-in-delay-2">
+            <div className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary min-h-[2.5rem] md:min-h-[3rem] opacity-0 animate-fade-in-delay-2">
               <span className="typing-text">
                 {currentText}
                 <span className={`cursor ${showCursor ? 'cursor-blink' : ''}`}>|</span>
               </span>
             </div>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 opacity-0 animate-fade-in-delay-3">
+            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 opacity-0 animate-fade-in-delay-3">
               I turn data into insights through analysis and visualization, 
               creating solutions that drive decisions. Alongside data, 
               I build modern web experiences with clean design and seamless functionality.
@@ -81,7 +81,7 @@ export const HeroSection = () => {
           {/* Image Content */}
           <div className="flex justify-center lg:justify-end opacity-0 animate-fade-in-delay-2">
             <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <img
                   src="/profile-photo.jpg"
                   alt="Nadia Hirwa - Data Analyst & Developer"
