@@ -48,7 +48,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[80vh] md:min-h-screen flex flex-col items-center justify-center px-4"
+      className="relative min-h-[80vh] md:min-h-screen flex flex-col items-center justify-center px-4 pt-24 md:pt-28 scroll-mt-24"
     >
       <div className="container max-w-6xl mx-auto z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
