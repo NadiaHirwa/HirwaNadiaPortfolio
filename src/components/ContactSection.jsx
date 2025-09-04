@@ -11,24 +11,43 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setIsSubmitting(true);
+    if (!formRef.current) return;
 
-    setTimeout(() => {
+    setIsSubmitting(true);
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      await emailjs.sendForm(serviceId, templateId, formRef.current, {
+        publicKey,
+      });
+
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
+
+      formRef.current.reset();
+    } catch (err) {
+      toast({
+        title: "Failed to send",
+        description: "Please try again later or email me directly.",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
   return (
     <section id="contact" className="py-16 md:py-24 px-4 relative bg-secondary/30">
@@ -119,7 +138,7 @@ export const ContactSection = () => {
           <div className="bg-card p-6 md:p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6" onSubmit={handleSubmit} noValidate aria-label="Contact form">
+            <form ref={formRef} className="space-y-6" onSubmit={handleSubmit} noValidate aria-label="Contact form">
               <div>
                 <label
                   htmlFor="name"
@@ -131,7 +150,7 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="user_name"
                   required
                   autoComplete="name"
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
@@ -150,7 +169,7 @@ export const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="user_email"
                   required
                   autoComplete="email"
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
