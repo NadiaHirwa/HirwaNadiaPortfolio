@@ -30,6 +30,10 @@ export const ContactSection = () => {
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("Missing EmailJS environment variables. Check VITE_EMAILJS_* in .env");
+      }
+
       await emailjs.sendForm(serviceId, templateId, formRef.current, {
         publicKey,
       });
@@ -41,9 +45,10 @@ export const ContactSection = () => {
 
       formRef.current.reset();
     } catch (err) {
+      console.error("Email send failed:", err);
       toast({
         title: "Failed to send",
-        description: "Please try again later or email me directly.",
+        description: typeof err?.text === 'string' ? err.text : (err?.message || "Please try again later or email me directly."),
       });
     } finally {
       setIsSubmitting(false);

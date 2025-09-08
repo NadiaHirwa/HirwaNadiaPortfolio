@@ -43,11 +43,11 @@ export const AboutSection = () => {
                 <span>Kigali, Rwanda</span>
               </div>
               <div className="flex items-center gap-4">
-                <a href="https://github.com/NadiaHirwa" target="_blank" className="flex items-center gap-2 text-emerald-500 hover:text-emerald-400 transition-colors">
+                <a href="https://github.com/NadiaHirwa" target="_blank" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
                   <Github size={16} />
                   <span>GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/nadiahirwa" target="_blank" className="flex items-center gap-2 text-emerald-500 hover:text-emerald-400 transition-colors">
+                <a href="https://www.linkedin.com/in/nadiahirwa" target="_blank" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
                   <Linkedin size={16} />
                   <span>LinkedIn</span>
                 </a>
