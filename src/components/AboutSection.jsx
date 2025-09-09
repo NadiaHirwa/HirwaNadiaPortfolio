@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -32,7 +32,7 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm md:text-base text-left">
               <div className="flex items-center gap-2">
                 <span className="font-semibold">Phone:</span>
-                <a href="tel:(+250)781-186-230" className="hover:text-primary transition-colors">+250790755673</a>
+                <a href="tel:(+250)781-186-230" className="hover:text-primary transition-colors">+250781186230</a>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-semibold">Email:</span>
