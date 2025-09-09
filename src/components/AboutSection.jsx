@@ -36,7 +36,7 @@ export const AboutSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-semibold">Email:</span>
-                <a href="mailto:irahirnad22@gmail.com" className="hover:text-primary transition-colors">ishimwediane400@gmail.com</a>
+                <a href="mailto:irahirnad22@gmail.com" className="hover:text-primary transition-colors">irahirnad22@gmail.com</a>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-semibold">City:</span>
